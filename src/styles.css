@@ -8,6 +8,11 @@
 
 body {
     margin: 0px;
+    max-width: 100vw;
+}
+
+header, main, footer {
+    padding: 50px 80px;
 }
 
 header {
@@ -15,25 +20,54 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 60px;
 }
 
 .shape {
     position: absolute;
     background-color: var(--shape-color);
-    width: 100vw;
-    min-height: 90vh;
-    transform: skewY(-10deg);
+    width: 100%;
+    min-height: 100%;
+    transform: skewY(-11deg);
     transform-origin: bottom left;
     z-index: -1;
 }
 
 .header-wrapper {
-    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    box-shadow: 4px 3px 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.header-image {
+    z-index: 1;
+    box-shadow: -4px -3px 8px 0px rgba(0, 0, 0, 0.15), 4px 3px 8px 2px rgba(0, 0, 0, 0.15);
+    flex-grow: 0;
 }
 
 .header-image img {
-    max-width: 300px;
+    max-width: 520px;
     height: auto;
+    object-fit: cover;
+    display: block;
 }
+
+.about {
+    background-color: white;
+    padding: 45px 20px;
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+
+.about p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
 
