@@ -1,0 +1,39 @@
+:root {
+    --shape-color: #0891b2
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+}
+
+.shape {
+    position: absolute;
+    background-color: var(--shape-color);
+    width: 100vw;
+    min-height: 90vh;
+    transform: skewY(-10deg);
+    transform-origin: bottom left;
+    z-index: -1;
+}
+
+.header-wrapper {
+    max-width: 80vw;
+}
+
+.header-image img {
+    max-width: 300px;
+    height: auto;
+}
+
