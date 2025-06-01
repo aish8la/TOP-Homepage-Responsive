@@ -75,6 +75,10 @@ header {
     margin: 0px;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 5rem;
+    white-space: nowrap;
+    color: white;
+    text-shadow: -3px 2px 8px #00000040 ;
 }
 
 .header-image img {
