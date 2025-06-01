@@ -69,5 +69,22 @@ header {
     line-height: 2rem;
 }
 
+.grid-ctn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
 
+.work-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+}
 
+.work-description {
+    aspect-ratio: 4 / 2;
+    padding: 8px 25px;
+}
+
+.work-image {
+    background-color: blueviolet;
+}
