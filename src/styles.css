@@ -30,7 +30,7 @@ header, main, footer {
     padding: 50px 80px;
 }
 
-h1 {
+h1, h2 {
     font-family: playfair-display;
 }
 
@@ -137,6 +137,26 @@ header {
 
 .work-image {
     background-color: blueviolet;
+}
+
+.work-icon-ctn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.work-icon-ctn > a {
+    font-size: 1.8rem;
+}
+
+.work-icon-ctn > h2 {
+    margin-right: auto;
+}
+
+.work-icon-ctn > a > img {
+    width: 1.8rem;
+    display: block;
 }
 
 footer {
