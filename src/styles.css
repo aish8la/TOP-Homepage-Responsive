@@ -148,17 +148,6 @@ header {
   aspect-ratio: 3 / 2;
 }
 
-.works-card {
-  transition:
-    box-shadow 0.5s ease,
-    transform 0.5s ease;
-}
-
-.works-card:hover {
-  box-shadow: 9px 9px 11px 1px rgba(0, 0, 0, 0.15);
-  transform: scale(1.05);
-}
-
 .work-description {
   aspect-ratio: 4 / 2;
   padding: 8px 25px;
@@ -190,15 +179,21 @@ header {
 
 .card-fade {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(20px) scale(0.95);
   transition:
     opacity 0.5s ease,
+    box-shadow 0.5s ease,
     transform 0.5s ease;
 }
 
 .card-fade.active {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(0px) scale(1);
+}
+
+.card-fade:hover {
+  box-shadow: 9px 9px 11px 1px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
 
 footer {

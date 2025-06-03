@@ -10,6 +10,14 @@ function entryClassCb(entries, observer) {
     if (entry.isIntersecting) {
       entry.target.style.transitionDelay = `${index * 0.2}s`;
       entry.target.classList.add("active");
+
+      setTimeout(
+        () => {
+          entry.target.style.transitionDelay = "";
+        },
+        index * 0.2 * 1000,
+      );
+
       observer.unobserve(entry.target);
     }
   });
