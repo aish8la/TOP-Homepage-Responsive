@@ -204,7 +204,7 @@ footer > * {
     fill: white;
 }
 
-@media (min-width: 940px) and (max-width: 1370px) {
+@media (min-width: 941px) and (max-width: 1370px) {
     .header-wrapper, .about {
         display: block;
     }
@@ -224,7 +224,7 @@ footer > * {
     .header-image h1 {
         top: 0px;
         right: 0px;
-        transform: translateX(calc(100% + 10px));
+        transform: translateX(calc(75%));
         font-size: 4rem;
     }
 
@@ -238,5 +238,26 @@ footer > * {
         aspect-ratio: unset;
         width: auto;
         height: 100%;
+    }
+}
+
+@media (max-width: 940px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+
+    .header-image {
+        aspect-ratio: unset;
+        max-width: 100%;
+    }
+
+    .grid-ctn {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
