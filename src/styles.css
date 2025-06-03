@@ -272,8 +272,6 @@ footer > * {
     }
 
     .about {
-        box-shadow: none;
-        background-color: transparent;
         max-width: 100%;
     }
 
