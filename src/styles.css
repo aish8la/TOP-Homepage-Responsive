@@ -181,6 +181,17 @@ header {
     display: block;
 }
 
+.card-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform  0.5s ease;
+}
+
+.card-fade.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 footer {
     display: flex;
     background-color: var(--shape-color);
