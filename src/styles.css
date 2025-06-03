@@ -234,4 +234,9 @@ footer > * {
         gap: 40px;
     }
 
+    .footer-image {
+        aspect-ratio: unset;
+        width: auto;
+        height: 100%;
+    }
 }
