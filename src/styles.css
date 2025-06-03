@@ -242,13 +242,30 @@ footer > * {
 }
 
 @media (max-width: 940px) {
+    .shape {
+        max-height: 1300px;
+    }
+
     .header-wrapper {
         flex-direction: column;
+        gap: 40px;
+    }
+
+    .about {
+        box-shadow: none;
+        background-color: transparent;
+        max-width: 100%;
     }
 
     .header-image {
         aspect-ratio: unset;
         max-width: 100%;
+    }
+
+    .header-image h1 {
+        white-space: normal;
+        transform: none;
+        left: 10px;
     }
 
     .grid-ctn {
@@ -259,5 +276,17 @@ footer > * {
 
     footer {
         flex-direction: column;
+        padding: 0px;
     }
+
+    .footer-image {
+        aspect-ratio: unset;
+        width: auto;
+        height: 100%;
+    }
+
+    .foot-text-section, header, main {
+        padding: 25px 35px;
+    }
+
 }
